@@ -43,6 +43,7 @@ public class SherlockAndTheGrid {
 				if (!a[size - 1][j].equals("#")) {
 					flag = 1;
 					h = i;
+					//checks for vertical presence of #
 					for (i = size - 1; i >= h; i--) {
 						if (a[i][j].equals("#")) {
 							flag = 0;
@@ -55,6 +56,7 @@ public class SherlockAndTheGrid {
 					if (!a[i][j].equals("#")) {
 						k = j;
 						h = i;
+						//checks for the horizontal presence of #
 						for (; j < size; j++) {
 							if (a[i][j].equals("#")) {
 								flag = 0;
